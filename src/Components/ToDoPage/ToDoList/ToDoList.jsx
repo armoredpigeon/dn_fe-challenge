@@ -1,17 +1,10 @@
 import ToDoItem from "../ToDoItem/ToDoItem";
 import "./ToDoList.css";
 
-const ToDoList = ({ list, handleDelete }) => {
+const ToDoList = ({ list }) => {
   return (
     <div className="todo-list-container">
-      {list.map((item, index) => (
-        <ToDoItem
-          key={index}
-          id={item.id}
-          title={item.title}
-          handleDelete={handleDelete}
-        />
-      ))}
+      {/* Generate list of ToDoItems here */}
     </div>
   );
 };

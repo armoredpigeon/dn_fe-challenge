@@ -6,24 +6,12 @@ import ToDoList from "./ToDoList/ToDoList";
 const ToDoPage = () => {
   const [list, setList] = useState([]);
 
-  const handleAdd = (title) => {
-    if (title) {
-      setList([...list, { title, id: uuidv4() }]);
-    }
-  };
-
-  const handleDelete = (id) => {
-    const index = list.findIndex((item) => item.id === id);
-
-    if (index !== -1) {
-      setList(list.toSpliced(index, 1));
-    }
-  };
-
+  // Add event handlers here (hint: use uuidv4 to generate unique id's if needed)
+  
   return (
     <div>
-      <CreateToDo handleAdd={handleAdd} />
-      <ToDoList list={list} handleDelete={handleDelete} />
+      <CreateToDo />
+      <ToDoList list={list} />
     </div>
   );
 };
