@@ -1,7 +1,16 @@
 import TextField from "@mui/material/TextField";
 import "./CreateToDo.css";
 
-const CreateToDo = () => {
+const CreateToDo = ({createToDoItem}) => {
+
+  const returnHandler = (event)=> {
+    if(event.key !== "Enter"){
+      return;
+    }
+    let itemLabel = event.target.value;
+    createToDoItem(itemLabel);
+    event.target.value = '';
+  }
   // Add event handlers here
   return (
     <div className="create-todo-container">
@@ -9,6 +18,7 @@ const CreateToDo = () => {
         fullWidth
         label="Create To-Do"
         variant="outlined"
+        onKeyDown={returnHandler}
       />
     </div>
   );

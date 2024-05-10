@@ -4,20 +4,27 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./ToDoItem.css";
+import ListDeleteContext from "../ListDeleteContext";
+import { useContext } from "react";
 
 const ToDoItem = ({ id, title }) => {
+  const deleteClicked = useContext(ListDeleteContext);
+
+  const deleteHandler = () => {
+    deleteClicked(id);
+  };
 
   return (
     <Paper className="todo-item-container">
-      <Checkbox />
+      <Checkbox/>
       <Typography
         variant="h6"
       >
         {title}
       </Typography>
       <div className="todo-item-delete-button">
-        <IconButton>
-          <DeleteIcon />
+        <IconButton onClick={deleteHandler}>
+          <DeleteIcon/>
         </IconButton>
       </div>
     </Paper>
