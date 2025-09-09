@@ -12,7 +12,11 @@ The application is written in React and uses [Material UI](https://mui.com/mater
 
 ## Requirements
 - User can type in the Create To-Do field.
-- Pressing "Enter" will create a new To-Do and clear the Create To-Do field.
+- Clicking "Create" will create a new To-Do and clear the Create To-Do fields.
+- Clicking "Cancel" will clear the Create To-Do fields.
 - A list of To-Do items will then be populated.
 - Clicking the delete icon will remove the To-Do item.
 - Toggling the checkbox will add/remove a strikethrough effect on the To-Do item.
+- The To-Do items will show an icon representing its category
+- The To-Do items will be styled with the icon on the left, the title and due date in two lines on the right, with the icon vertically centered relative to the two lines of text.
+
