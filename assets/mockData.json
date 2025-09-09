@@ -1,0 +1,19 @@
+{
+  "todoItems": [
+    {
+      "title": "Todo Item 1",
+      "category": "work",
+      "dueDate": "2025-09-15T12:00:00.000Z"
+    },
+    {
+      "title": "Todo Item 2",
+      "category": "exercise",
+      "dueDate": "2025-09-14T12:00:00.000Z"
+    },
+    {
+      "title": "Todo Item 3",
+      "category": "creative",
+      "dueDate": "2025-09-10T12:00:00.000Z"
+    }
+  ]
+}
