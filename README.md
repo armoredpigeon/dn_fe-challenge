@@ -18,5 +18,4 @@ The application is written in React and uses [Material UI](https://mui.com/mater
 - Clicking the delete icon will remove the To-Do item.
 - Toggling the checkbox will add/remove a strikethrough effect on the To-Do item.
 - The To-Do items will show an icon representing its category, if selected.
-- The To-Do items will be styled with the icon on the left, the title and due date in a left-aligned column on the right, with the icon vertically centered relative to the text.
-
+- The To-Do items will be styled with the icon on the left, if a category is selected, and the title and due date in a left-aligned column on the right, with the icon vertically centered relative to the text.
