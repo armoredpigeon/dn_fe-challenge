@@ -11,7 +11,9 @@ const grandchildEl = memo(function grandChildEl({name, clickHandler}){
 
 const childElList = ({dataList, clickHandler})=> {
  return (
+    <>
     {dataList.map(item => <grandchildEl name={item.name} clickHandler={clickHandler} />)}
+    </>
  )
 }
 
