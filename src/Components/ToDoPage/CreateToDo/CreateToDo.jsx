@@ -4,6 +4,7 @@ import "./CreateToDo.css";
 
 const CreateToDo = () => {
   // Add event handlers here
+  // Add the ability for the user to select a category from the options "Chores", "Creative", "Exercise", "Social", and "Work"
   return (
     <form className="create-todo-container">
       <TextField fullWidth label="Create To-Do" variant="outlined" />
