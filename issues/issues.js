@@ -1,4 +1,7 @@
-import React, {useEffect, useState} from 'react';
+ /**
+  * YOUR GOAL IS TO SPOT ISSUES AND EXPLAIN THEM
+ */
+ import React, {useEffect, useState} from 'react';
 
 const grandchildEl = memo(function grandChildEl({name, clickHandler}){
     // some complicated logic
